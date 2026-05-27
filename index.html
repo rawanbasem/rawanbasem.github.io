@@ -5,97 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rawan Basem | Robotics Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for clean icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
-    <header class="hero">
-        <div class="container">
+    <div class="intro-screen">
+        <div class="intro-content">
             <h1>Rawan Basem</h1>
-            <p class="tagline">Robotics Software & Systems Engineer</p>
-            <p class="bio">Specializing in autonomous navigation, simulation environments, and robot mechanics. Transforming algorithms into physical motion.</p>
-            <div class="social-links">
-                <a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            <p>Robotics Systems & Software Engineer</p>
+            <div class="scroll-prompt">
+                <a href="#nav-anchor" class="scroll-btn"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- Main Content -->
-    <main class="container">
-        
-        <!-- Skills Section -->
-        <section class="skills-section">
-            <h2>Technical Toolkit</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Software & Frameworks</h3>
-                    <p>ROS2, Gazebo, Isaac Sim, URDF, TF Transforms</p>
+    <div id="nav-anchor"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#projects" class="active">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav-socials">
+                <li><a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="wrapper">
+
+        <section id="projects" class="portfolio-section">
+            <div class="section-header">
+                <h2>Featured Work</h2>
+                <p>Developing autonomous capabilities, robust coordinate transformations, and precision simulations.</p>
+            </div>
+
+            <div class="featured-project-primary">
+                <header class="project-header">
+                    <span class="project-date">Featured Project</span>
+                    <h3>Autonomous Manipulation & Fleet Navigation</h3>
+                    <p>Designed and deployed an integrated behavior pipeline coordinating fleet synchronization and environment mapping. Features custom node interactions, TF frame transformations, and localized path planning.</p>
+                </header>
+                <div class="project-visual">
+                    <div class="media-frame">
+                        <img src="https://via.placeholder.com/800x450/111827/38bdf8?text=Insert+Primary+Project+Demo+GIF+Here" alt="Project Demo">
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <p>C++, Python, MATLAB</p>
+                <div class="project-footer">
+                    <div class="tags">
+                        <span class="tag">ROS2</span>
+                        <span class="tag">Nav2</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Gazebo</span>
+                    </div>
+                    <a href="#" class="btn-outline">View Repository</a>
                 </div>
-                <div class="skill-category">
-                    <h3>Hardware & Design</h3>
-                    <p>SolidWorks, 3D Printing, Microcontrollers</p>
-                </div>
+            </div>
+
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <header class="card-header">
+                        <h3>Kinematics & Coordinate Transform Systems</h3>
+                    </header>
+                    <div class="card-visual">
+                        <img src="https://via.placeholder.com/400x250/111827/38bdf8?text=TF+Transforms+and+Kinematics+Demo" alt="Project Visual">
+                    </div>
+                    <div class="card-body">
+                        <p>Implemented rigid body transformations and inverse kinematics solvers to successfully coordinate joint-state trajectories within complex environment coordinates.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TF / Odometry</span>
+                            <span class="tag">URDF</span>
+                        </div>
+                        <a href="#" class="btn-minimal">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <header class="card-header">
+                        <h3>Mechanical Prototyping & CAD Design</h3>
+                    </header>
+                    <div class="card-visual">
+                        <img src="https://via.placeholder.com/400x250/111827/38bdf8?text=SolidWorks+3D+Modeling+Demo" alt="Project Visual">
+                    </div>
+                    <div class="card-body">
+                        <p>Engineered structural components utilizing detailed geometric modeling, optimizing stress tolerances for additive manufacturing and real-world assembly integration.</p>
+                        <div class="tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Hardware</span>
+                        </div>
+                        <a href="#" class="btn-minimal">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <hr>
-
-        <!-- Projects Grid Section -->
-        <section class="projects-section">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                
-                <!-- Project 1 Placeholder -->
-                <div class="project-card">
-                    <div class="project-media">
-                        <!-- Placeholder for a GIF or Image -->
-                        <div class="media-placeholder">🔄 [Insert Demo GIF/Video Here]</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Autonomous Navigation & Mapping</h3>
-                        <p class="project-description">Implemented a full navigation pipeline featuring AMCL localization and Nav2 stack configuration. Integrated sensory feedback for dynamic obstacle avoidance.</p>
-                        <div class="tags">
-                            <span class="tag">ROS2</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Gazebo</span>
-                        </div>
-                        <a href="#" class="btn-project">View Repository <i class="fas fa-arrow-right"></i></a>
-                    </div>
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2>Technical Stack</h2>
+            </div>
+            <div class="skills-columns">
+                <div class="skill-col">
+                    <h4><i class="fas fa-cubes"></i> Ecosystems & Tools</h4>
+                    <ul>
+                        <li>ROS2 Middleware</li>
+                        <li>Gazebo & Isaac Sim Environments</li>
+                        <li>URDF Modeling & TF Trees</li>
+                    </ul>
                 </div>
-
-                <!-- Project 2 Placeholder -->
-                <div class="project-card">
-                    <div class="project-media">
-                        <div class="media-placeholder">🛠️ [Insert CAD Render/Image Here]</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Robotic Kinematics & Mechanical Design</h3>
-                        <p class="project-description">Designed a custom robotic assembly emphasizing structural structural integrity, load distribution, and rapid prototyping via 3D fabrication methods.</p>
-                        <div class="tags">
-                            <span class="tag">SolidWorks</span>
-                            <span class="tag">URDF</span>
-                            <span class="tag">3D Printing</span>
-                        </div>
-                        <a href="#" class="btn-project">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <div class="skill-col">
+                    <h4><i class="fas fa-code"></i> Languages</h4>
+                    <ul>
+                        <li>C++ (Modern OOP)</li>
+                        <li>Python</li>
+                        <li>MATLAB / Simulink</li>
+                    </ul>
                 </div>
-
+                <div class="skill-col">
+                    <h4><i class="fas fa-drafting-comp"></i> Design & Prototyping</h4>
+                    <ul>
+                        <li>SolidWorks 3D Modeling</li>
+                        <li>Additive Manufacturing / 3D Printing</li>
+                        <li>Microcontroller Integration (Arduino/STM32)</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Rawan Basem. Built with GitHub Pages.</p>
+    <footer id="contact" class="footer-distributed">
+        <div class="footer-container">
+            <div class="footer-block">
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            </div>
+            <div class="footer-block">
+                <h3><i class="fas fa-share-alt"></i> Professional Networks</h3>
+                <ul class="footer-social-links">
+                    <li><a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rawan Basem. Framework inspired by HTML5 UP aesthetic.</p>
+        </div>
     </footer>
 
 </body>

@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rawan Basem | Robotics Portfolio</title>
+    <title>Rawan Basem | Mechatronics Engineer & Robotics Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="intro-screen" id="home">
         <div class="intro-content">
+            <span class="systems-status"><span class="status-pulse"></span> SYSTEM ONLINE // MULTI-DISCIPLINARY ARCHITECTURE</span>
             <h1>Rawan Basem</h1>
-            <p>Robotics Systems & Software Engineer</p>
+            <p class="subtitle">Robotics Systems & Mechanical Design Engineer</p>
+            
             <div class="intro-socials">
-                <a href="https://github.com/rawanbasem" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/rawan-basem/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:rawanbasem202@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/rawanbasem" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/rawan-basem/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="mailto:rawanbasem202@gmail.com" title="Email"><i class="fas fa-envelope"></i> Email</a>
             </div>
+            
             <div class="scroll-prompt">
                 <a href="#nav-anchor" class="scroll-btn"><i class="fas fa-chevron-down"></i></a>
             </div>
@@ -28,38 +34,42 @@
 
     <nav class="main-nav">
         <div class="nav-container">
+            <div class="nav-brand">R.BASEM</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-item">Home</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#software" class="nav-item">Software</a></li>
+                <li><a href="#mechanical" class="nav-item">Mechanical</a></li>
                 <li><a href="#skills" class="nav-item">Skills</a></li>
                 <li><a href="#contact" class="nav-item">Contact</a></li>
-            </ul>
-            <ul class="nav-socials">
-                <li><a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rawan-basem/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </div>
     </nav>
 
     <main class="wrapper">
 
-        <section id="projects" class="portfolio-section target-section">
+        <section id="software" class="portfolio-section target-section">
             <div class="section-header">
-                <h2>Featured Work</h2>
-                <p>Developing autonomous capabilities, robust coordinate transformations, and precision simulations.</p>
+                <h2>Autonomous & Software Systems</h2>
+                <p>Developing autonomous navigation stacks, robust coordinate transformations, and simulation environments.</p>
             </div>
 
             <div class="featured-project-primary">
-                <header class="project-header">
-                    <span class="project-date">Primary Highlight</span>
+                <div class="project-header">
+                    <span class="project-date">// PRIMARY CORE NAVIGATION</span>
                     <h3>Autonomous Mobile Robot Navigation & Mapping</h3>
-                    <p>Designed and deployed an integrated autonomous behavior pipeline in Gazebo. Implemented full SLAM mapping mapping, AMCL localization, and Nav2 stack tuning for high-accuracy dynamic path planning.</p>
-                </header>
+                    <p>Designed and deployed an integrated autonomous behavior pipeline in Gazebo. Implemented full SLAM mapping, AMCL localization, and Nav2 stack tuning for high-accuracy dynamic path planning.</p>
+                </div>
+                
                 <div class="project-visual">
                     <div class="media-frame">
-                        <img src="https://via.placeholder.com/800x450/111827/38bdf8?text=ROS2+Navigation+and+SLAM+Simulation+GIF" alt="Project Demo">
+                        <div class="tech-placeholder-gfx navigation-gfx">
+                            <div class="radar-circle"></div>
+                            <div class="radar-line"></div>
+                            <span>[ ROS2 NAV2 / GAZEBO SIMULATION ACTIVE ]</span>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="project-footer">
                     <div class="tags">
                         <span class="tag">ROS2</span>
@@ -67,18 +77,22 @@
                         <span class="tag">C++</span>
                         <span class="tag">Gazebo</span>
                     </div>
-                    <a href="https://github.com/rawanbasem" target="_blank" class="btn-outline">View Repository</a>
+                    <a href="https://github.com/rawanbasem" target="_blank" class="btn-outline">View Repository <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="projects-grid">
-                
                 <article class="project-card">
-                    <header class="card-header">
+                    <div class="card-header">
                         <h3>Kinematics & Coordinate Transform Systems</h3>
-                    </header>
+                    </div>
                     <div class="card-visual">
-                        <img src="https://via.placeholder.com/400x250/111827/38bdf8?text=TF+Transforms+and+Odometry+Demo" alt="Project Visual">
+                        <div class="tech-placeholder-gfx kinematics-gfx">
+                            <div class="axis-line x-axis"></div>
+                            <div class="axis-line y-axis"></div>
+                            <div class="axis-line z-axis"></div>
+                            <span>[ TF2 / ODOMETRY MATRIX ]</span>
+                        </div>
                     </div>
                     <div class="card-body">
                         <p>Configured complex robot descriptions (URDF) and resolved spatial dependencies across dynamic multi-joint components using tf2 coordinate frame transformations.</p>
@@ -87,34 +101,19 @@
                             <span class="tag">TF / Odometry</span>
                             <span class="tag">URDF</span>
                         </div>
-                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Code <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="project-card highlight-card">
-                    <header class="card-header">
-                        <h3>Interactive SolidWorks CAD Database</h3>
-                    </header>
-                    <div class="card-visual">
-                        <img src="https://via.placeholder.com/400x250/111827/38bdf8?text=SolidWorks+Assemblies+Sub-Portfolio" alt="Project Visual">
-                    </div>
-                    <div class="card-body">
-                        <p>A dedicated repository showcasing structural engineering assemblies, internal mechanical layouts, and strict geometric tolerancing engineered for additive manufacturing pipelines.</p>
-                        <div class="tags">
-                            <span class="tag">SolidWorks</span>
-                            <span class="tag">3D Printing</span>
-                            <span class="tag">Mechanisms</span>
-                        </div>
-                        <a href="https://rawanbasem.github.io/solidworks-portfolio/" target="_blank" class="btn-minimal">Explore CAD Models <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Code <i class="fas fa-code"></i></a>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <header class="card-header">
+                    <div class="card-header">
                         <h3>NVIDIA Isaac Sim Environment Design</h3>
-                    </header>
+                    </div>
                     <div class="card-visual">
-                        <img src="https://via.placeholder.com/400x250/111827/38bdf8?text=Isaac+Sim+Photorealistic+Testing" alt="Project Visual">
+                        <div class="tech-placeholder-gfx isaac-gfx">
+                            <div class="grid-floor"></div>
+                            <span>[ SYNTHETIC DATA STREAM ]</span>
+                        </div>
                     </div>
                     <div class="card-body">
                         <p>Constructed hardware-in-the-loop photorealistic sensor testing environments. Optimized real-time camera and LiDAR synthetic data feeds for computer vision stack verification.</p>
@@ -123,10 +122,82 @@
                             <span class="tag">Python</span>
                             <span class="tag">Sensors</span>
                         </div>
-                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Project <i class="fas fa-chart-line"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="mechanical" class="portfolio-section target-section">
+            <div class="section-header">
+                <h2>Mechanical Engineering & CAD Design</h2>
+                <p>Engineering complex structural assemblies, robust internal components, and geometric designs optimized for manufacturing pipelines.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card hardware-card">
+                    <div class="card-header">
+                        <h3>Robotic Chassis & Mechanism Assemblies</h3>
+                    </div>
+                    <div class="card-visual">
+                        <div class="tech-placeholder-gfx cad-gfx">
+                            <div class="isometric-box"></div>
+                            <span>[ SOLIDWORKS ASSEMBLY VIEW ]</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Developed full 3D models of rigid robotic frames emphasizing weight distribution, structural integrity under load, and precise internal component clearance constraints.</p>
+                        <div class="tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">Assemblies</span>
+                            <span class="tag">Mechanisms</span>
+                        </div>
+                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Design Files <i class="fas fa-file-alt"></i></a>
                     </div>
                 </article>
 
+                <article class="project-card hardware-card">
+                    <div class="card-header">
+                        <h3>Production Blueprints & GD&T Drawings</h3>
+                    </div>
+                    <div class="card-visual">
+                        <div class="tech-placeholder-gfx drafting-gfx">
+                            <div class="blueprint-line h-line"></div>
+                            <div class="blueprint-line v-line"></div>
+                            <span>[ MANUFACTURING BLUEPRINTS ]</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Generated production-ready engineering blueprints incorporating strict Geometric Dimensioning and Tolerancing (GD&T) standards to ensure high-accuracy physical machining.</p>
+                        <div class="tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">GD&T Drawings</span>
+                            <span class="tag">DFM</span>
+                        </div>
+                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Blueprints <i class="fas fa-drafting-compass"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card hardware-card">
+                    <div class="card-header">
+                        <h3>Additive Prototyping & Fabrication Components</h3>
+                    </div>
+                    <div class="card-visual">
+                        <div class="tech-placeholder-gfx printing-gfx">
+                            <div class="nozzle-dot"></div>
+                            <span>[ additive layers .stl ]</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Designed custom sensor brackets and enclosures optimized specifically for 3D printing pipelines, minimizing support structures while maintaining tensile strength limits.</p>
+                        <div class="tags">
+                            <span class="tag">SolidWorks CAD</span>
+                            <span class="tag">3D Printing</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <a href="https://github.com/rawanbasem" target="_blank" class="btn-minimal">View Parts <i class="fas fa-cube"></i></a>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -167,20 +238,19 @@
     <footer id="contact" class="footer-distributed target-section">
         <div class="footer-container">
             <div class="footer-block">
-                <h3><i class="fas fa-envelope"></i> Email</h3>
-                <p><a href="mailto:rawanbasem202@gmail.com">rawanbasem202@gmail.com</a></p>
+                <h3><i class="fas fa-envelope"></i> Direct Channel</h3>
+                <p><a href="mailto:rawanbasem202@gmail.com" class="footer-email">rawanbasem202@gmail.com</a></p>
             </div>
             <div class="footer-block">
-                <h3><i class="fas fa-share-alt"></i> Professional Networks</h3>
+                <h3><i class="fas fa-share-alt"></i> External Repositories & Networks</h3>
                 <ul class="footer-social-links">
-                    <li><a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/rawan-basem/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://rawanbasem.github.io/solidworks-portfolio/" target="_blank"><i class="fas fa-cube"></i> CAD Portfolio</a></li>
+                    <li><a href="https://github.com/rawanbasem" target="_blank"><i class="fab fa-github"></i> GitHub Overview</a></li>
+                    <li><a href="https://www.linkedin.com/in/rawan-basem/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Connection</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Rawan Basem. Built with GitHub Pages.</p>
+            <p>&copy; 2026 Rawan Basem. All Rights Reserved. Engineered via GitHub Pages.</p>
         </div>
     </footer>
 
@@ -192,8 +262,7 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 150)) {
+                if (pageYOffset >= (sectionTop - 180)) {
                     current = section.getAttribute('id');
                 }
             });

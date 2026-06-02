@@ -7,7 +7,7 @@
     --text-bright: #f1f5f9;
     --text-muted: #64748b;
     --accent-blue: #38bdf8;
-    --accent-hardware: #f59e0b; /* Sophisticated mechanical gold for hardware differentiation */
+    --accent-hardware: #f59e0b; 
     --accent-glow: rgba(56, 189, 248, 0.3);
     --font-primary: 'Space Grotesk', sans-serif;
     --font-mono: 'Space Mono', monospace;
@@ -196,7 +196,7 @@ a, a:visited, a:active, a:hover {
 }
 
 #mechanical {
-    border-bottom: none; /* Last portfolio row clears bottom border */
+    border-bottom: none;
 }
 
 .section-header {
@@ -295,27 +295,6 @@ a, a:visited, a:active, a:hover {
 .y-axis { background-color: #22c55e; transform: rotate(90deg) translateX(30px); }
 .z-axis { background-color: #38bdf8; transform: rotate(-45deg) translateX(30px); }
 
-.cad-gfx .isometric-box {
-    width: 45px;
-    height: 45px;
-    border: 2px dashed rgba(245, 158, 11, 0.4);
-    transform: rotateX(45deg) rotateZ(45deg);
-    margin-bottom: 15px;
-}
-
-.drafting-gfx .blueprint-line { position: absolute; background-color: rgba(245, 158, 11, 0.15); }
-.h-line { width: 100%; height: 1px; top: 40%; }
-.v-line { width: 1px; height: 100%; left: 30%; }
-
-.printing-gfx .nozzle-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-hardware);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-hardware);
-    margin-bottom: 15px;
-}
-
 .isaac-gfx {
     background: linear-gradient(180deg, #05070d 0%, #0f172a 100%);
 }
@@ -343,7 +322,6 @@ a, a:visited, a:active, a:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Gold styling deviations for structural hardware sections */
 .project-card.hardware-card:hover {
     border-color: var(--accent-hardware);
 }
@@ -358,22 +336,77 @@ a, a:visited, a:active, a:hover {
     font-weight: 600;
 }
 
-.card-visual .tech-placeholder-gfx {
-    height: 180px;
+.card-visual {
+    height: 220px;
+    background-color: #05070d;
+    position: relative;
+    overflow: hidden;
 }
 
-.card-body {
-    padding: 24px;
+/* FIXED SPECIFIC MEDIA CONTROLS TO ELIMINATE CROPPING COERCION */
+.hardware-video-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Shows full vertical frame with clean side panels */
+    background-color: #05070d;
+    display: block;
+}
+
+.hardware-img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Prevents CAD drawing truncations */
+    background-color: #05070d;
+    display: block;
+}
+
+/* NATIVE MULTI-IMAGE HORIZONTAL SCROLL SNAP CAROUSEL CSS */
+.slider-wrapper {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    height: calc(100% - 24px); /* Leave clean space for indicator badge */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
-.card-body p {
+.slider-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+
+.slider-wrapper::-webkit-scrollbar-track {
+    background: #05070d;
+}
+
+.slider-wrapper::-webkit-scrollbar-thumb {
+    background: var(--accent-hardware);
+    border-radius: 10px;
+}
+
+.slider-wrapper img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #05070d;
+    scroll-snap-align: start;
+}
+
+.gallery-indicator {
+    height: 24px;
+    background-color: rgba(5, 7, 13, 0.9);
+    border-top: 1px solid var(--border-color);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 24px;
-    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Badge Arrays */

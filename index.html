@@ -56,7 +56,10 @@
                 <div class="project-header">
                     <span class="project-date">// PRIMARY CORE NAVIGATION</span>
                     <h3>Autonomous Mobile Robot Navigation & Mapping</h3>
-                    <p>Designed and deployed an integrated autonomous behavior pipeline in Gazebo. Implemented full SLAM mapping, AMCL localization, and Nav2 stack tuning for high-accuracy dynamic path planning.</p>
+                    <p>Designed and implemented an autonomous warehouse shelf-transport pipeline for a mobile robot using ROS2 and the Nav2 stack, covering the full localization-to-actuation pipeline: AMCL-based localization on a pre-built map, costmap keepout filters/masks to enforce no-go zones around hazards, and Nav2-driven autonomous navigation with obstacle avoidance between mapped waypoints. 
+                        Built a custom LIDAR-based perception system for shelf-leg detection and triangulation, paired with TF2-driven closed-loop docking control and dynamic Nav2 footprint reconfiguration so the robot could safely navigate while carrying a load. 
+                        Validated the system in simulation before deploying it on physical hardware, debugging and tuning sim-to-real discrepancies in sensor calibration and motion control along the way.
+                    </p>
                 </div>
                 
                 <div class="project-visual">
